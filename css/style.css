@@ -1,0 +1,313 @@
+/* For the international students: we work as much as possible with rem values. If you look at the the reset_plus.css file, you'll see that we applied a CSS rule so that 1rem equals 10px. This is easy to work with */
+
+/* We always follow the Mobile First design principle. This means we start with building the mobile version of the site */
+
+/* Using media queries from certain points on (specified in pixels) we add extra layers of style to create a responsive end-result. An example of a media query:
+
+@media (min-width: 900px) {}
+
+*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(59,59,59);
+    background: linear-gradient(0deg, rgba(59,59,59,1) 85%, rgb(31, 31, 31) 90%);
+    background-repeat: no-repeat;
+    color: white;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Damion', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(22, 22, 22);
+    background: linear-gradient(180deg, rgb(22, 22, 22) 80%, rgb(12, 12, 12) 100%);
+    color: white;
+    text-decoration: underline;
+}
+
+.headingpic {
+    height: 30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.95)), url("../images/header.png");
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+.headingpic:hover {
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 80%;
+}
+
+.search {
+    margin: 5rem auto 0;
+    text-align: center;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.616);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.search input[type=text] {
+    color: white;
+    background-color: rgb(59,59,59);
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    height: 5rem;
+    width: 80%;
+    transition-duration: 0.1s;
+}
+
+.search input[type=text]:hover {
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(15rem, auto);
+    gap: 2rem;
+}
+
+h2{
+
+	height: 100%;
+	color: transparent;
+	position: relative;
+	font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition-duration: 0.1s;
+    text-align: center;
+    padding-top: 2rem;
+
+}
+
+h2:hover{
+    background-color: #0a0038b6;
+    color: white;
+    transition-duration: 0.1s;
+}
+
+h3 {
+    text-align: center;
+    text-decoration-style: dotted;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    transition-duration: 0.1s;
+}
+
+h3:hover {
+    transform: scale(1.05);
+    transition-duration: 0.1s;
+}
+
+.pic1 {
+    background-image: url("../images/ZikZak.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic2 {
+    background-image: url("../images/Minibricks.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic3 {
+    background-image: url("../images/iobo.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic4 {
+    background-image: url("../images/CriticalTechWorks.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic5 {
+    background-image: url("../images/ActiveTheory.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic6 {
+    background-image: url("../images/RevolveStudio.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic7 {
+    background-image: url("../images/RealHappinessProject.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic8 {
+    background-image: url("../images/Blowfire.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic9 {
+    background-image: url("../images/TeamEliteKickboxing.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic10 {
+    background-image: url("../images/Decisive.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic11 {
+    background-image: url("../images/Homecult.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic12 {
+    background-image: url("../images/Autonomy.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.pic13 {
+    background-image: url("../images/ATO0Design.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+@media (min-width: 700px) {
+    h1{
+        font-size: 5rem;
+    }
+    body {
+        height: auto;
+        background: linear-gradient(0deg, rgba(59,59,59,1) 60%, rgb(31, 31, 31) 70%);
+    }
+    h4 {
+        font-size: 3rem;
+    }
+    .container {
+        width: 70vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(10rem, auto);
+        gap: 3rem;
+    }
+    .search {
+        width: 88%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .pic1 {
+        grid-column: 1/4;
+        grid-row: 1/3; 
+    }
+
+    .pic2 {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .pic5 {
+        grid-column: 2/4;
+        grid-row: 5/7;
+    }
+}
+
+@media (min-width: 900px) {
+    .container{
+        grid-auto-rows: minmax(12rem, auto);
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 65vw;
+        margin: 0 auto 3rem;
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-auto-rows: minmax(15rem, auto);
+        gap: 3rem;
+    }
+    .search {
+        width: 60%;
+        margin: 5rem auto 0;
+    }
+    h3{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .headingpic {
+        height: 70vh;
+    }
+    
+    h4 {
+        font-size: 3rem;
+    }
+
+}
